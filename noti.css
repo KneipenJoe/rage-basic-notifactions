@@ -1,0 +1,58 @@
+body, html {
+    padding: 0;
+    margin: 0;
+}
+
+.notification_area {
+    position: absolute;
+    height: 100%;
+    width: 550px;
+    overflow: hidden;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    font-family: 'Source Code Pro', serif;
+}
+
+.notification_area > .notification {
+    position: relative;
+    float: right;
+    min-height: 100px;
+    width: 500px;
+    margin: 24px;
+    z-index: 2;
+    padding: 4px;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.75);
+    background-color: white;
+    user-select: none;
+}
+
+.notification_area > .notification > .title {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.notification_area > .notification > .title > img {
+    height: 32px;
+    width: 32px;
+}
+
+.notification_area > .notification > .filler {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    background-color: lightgrey;
+}
+
+.notification_area > .notification > .filler > .fill {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 1%;
+    background-color: grey;
+    transition: ease all .4s;
+}

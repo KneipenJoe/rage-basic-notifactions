@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source%20Sans%20Pro">
+    <link rel="stylesheet" href="noti.css">
+    <meta charset="UTF-8">
+    <title>Notifications :3</title>
+</head>
+<body>
+    <div class="notification_area"></div>
+    <script src="app.js"></script>
+    <script>
+        // using example
+        createAlert("check", "Erfolg", "Möchtest du Kekse?", 5);
+        setTimeout(function() {
+            createAlert("risiko", "Fehler", "Es gibt aber keine Kekse! :(", 5);
+        }, 1500);
+    </script>
+</body>
+</html>
